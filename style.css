@@ -1,78 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Quicksand:wght@500&display=swap');
+
 body {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #fff5f8 0%, #ffe4e9 100%);
-  color: #333;
+  padding: 0;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  color: #00334e;
   overflow-x: hidden;
 }
 
 header {
-  background: #ffcad4;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
   padding: 20px;
   text-align: center;
-  transform: translateY(-100%);
-  animation: slideIn 1s forwards;
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateY(0);
-  }
+  animation: slideDown 1s ease-out;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-family: 'Jost', sans-serif;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 10px;
+  color: #00334e;
   text-decoration: none;
-  color: #ff5d8f;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-  color: #ff007f;
-}
-
-main {
-  padding: 20px;
-  animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  color: #00bcd4;
+  transform: scale(1.1);
 }
 
 section {
-  background: rgba(255, 255, 255, 0.7);
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(255, 92, 143, 0.2);
-  backdrop-filter: blur(5px);
-  transition: transform 0.4s;
-}
-
-section:hover {
-  transform: translateY(-5px);
+  padding: 50px;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
 }
 
 button {
-  background: #ff5d8f;
-  border: none;
+  background-color: #00bcd4;
   color: white;
   padding: 10px 20px;
-  margin-top: 10px;
-  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 25px;
   cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
+  transition: background-color 0.4s, transform 0.4s;
 }
 
 button:hover {
-  background: #ff007f;
-  transform: scale(1.1);
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%);}
+  to { transform: translateY(0);}
 }
