@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Quicksand:wght@400;500&display=swap');
 
 body {
-  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  background: linear-gradient(135deg, #a8edea, #74ebd5);
   color: #00334e;
   overflow-x: hidden;
 }
@@ -27,6 +26,7 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s, transform 0.3s;
+  font-family: 'Jost', sans-serif;
 }
 
 nav a:hover {
@@ -40,6 +40,14 @@ section {
   animation: fadeIn 2s ease-in;
 }
 
+section h2, section h3 {
+  font-family: 'Jost', sans-serif;
+}
+
+section p {
+  font-family: 'Quicksand', sans-serif;
+}
+
 button {
   background-color: #00bcd4;
   color: white;
@@ -49,6 +57,7 @@ button {
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.4s, transform 0.4s;
+  font-family: 'Jost', sans-serif;
 }
 
 button:hover {
